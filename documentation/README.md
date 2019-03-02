@@ -8,61 +8,53 @@ Examples of things to include are the following.
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best enhancement to the Sitecore Admin (XP) UI for Content Editors & Marketers
 
 What is the purpose of your module? What problem does it solve and how does it do that?
+
+-Often Content authors create content items and they want to make them clone of some other content item. However as per current sitecore 
+functionality one can only create a new clone of an item but they can't convert an existing item clone of some other item.
+
+-This is when this module comes into picture. On installtion of this module a new button called "CloneMe" is added to the Review tab in 
+Sitecore ribbon. On click of this button a pop up will be shown to the content authors where they can select a source item, 
+post which the current item will be made clone of the selected source item.
 
 ## Pre-requisites
 
 Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+- No
 
 ## Installation
 
 Provide detailed instructions on how to install the module, and include screenshots where necessary.
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+-Please have Sitecore 9.1 with .Net Framework 4.7.1 installed on your machine.
+-Upload and install the CloneMe-1.0.zip package in your Sitecore instance.
+-Now, you are good to go.
 
 ## Configuration
 
 How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
 
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
+-No additional configuration is required. Once the module is installed, you can start using it instantly.
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+step 1. Open your Sitecore 9.1 instance and navigate to Content Editor.
+step 2. Go to any existing item which you want to make as a cloned item.
+step 3. Navigate to the Review tab. You see a "CloneMe" button. Please refer to below screenshot,
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+![CloneMe Button](images/cloneme-button.png?raw=true "CloneMe Button")
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+step 4. Click on the "CloneMe" button. Then a pop up will be shown.
+step 5. Select the source item from which you want to clone the current item and click OK. Please refer to below screenshot,
 
-You can embed images of different formats too:
+![select source item](images/select-source-item?raw=true "Select Source Item")
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
+After few seconds a pop up will be shown which will contain the success message. Please refer to below screenshot
 
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
+![Clone Success message](images/clone-success-message.png?raw=true "Clone Success Message")
 
 ## Video
 
