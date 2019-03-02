@@ -41,20 +41,23 @@ How do you configure your module once it is installed? Are there items that need
 
 ## Usage
 
-step 1. Open your Sitecore 9.1 instance and navigate to Content Editor.
-step 2. Go to any existing item which you want to make as a cloned item.
-step 3. Navigate to the Review tab. You see a "CloneMe" button. Please refer to below screenshot,
+1. Open your Sitecore 9.1 instance and navigate to Content Editor.
+2. Go to any existing item which you want to make as a cloned item.
+3. Navigate to the Review tab. You see a "CloneMe" button. Please refer to below screenshot,
 
 ![CloneMe Button](images/cloneme-button.png?raw=true "CloneMe Button")
 
-step 4. Click on the "CloneMe" button. Then a pop up will be shown.
-step 5. Select the source item from which you want to clone the current item and click OK. Please refer to below screenshot,
+
+4. Click on the "CloneMe" button. Then a pop up will be shown.
+5. Select the source item from which you want to clone the current item and click OK. Please refer to below screenshot,
 
 ![Select Source Item](images/select-source-item.png?raw=true "Select Source Item")
 
-After few seconds a pop up will be shown which will contain the success message. Please refer to below screenshot
+
+6. After few seconds a pop up will be shown which will contain the success message. Please refer to below screenshot
 
 ![Clone Success Message](images/clone-success-message.png?raw=true "Clone Success Message")
+
 
 ## Video
 
