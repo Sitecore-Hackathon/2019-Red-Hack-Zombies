@@ -88,7 +88,6 @@ namespace CloneMe.Foundation
             {
                 //Temporary clones path
                 var tmpClonePathId = "{4982D011-6BC2-40DD-BBDE-8B2A07B63853}";
-
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
                     //Getting temporary clone path item from config
@@ -109,10 +108,6 @@ namespace CloneMe.Foundation
                         return;
                     }
 
-                    //Storing current item's id and name
-                    var currentItemId = currentItem.ID;
-                    var currentItemName = currentItem.Name;
-
                     //Added null check for current item's parent
                     if (currentItem.Parent == null)
                     {
@@ -121,6 +116,11 @@ namespace CloneMe.Foundation
                             currentItem.ParentID.Guid.ToString("B").ToUpper())));
                         return;
                     }
+
+                    //Storing current item's id, name and parent name
+                    var currentItemId = currentItem.ID;
+                    var currentItemName = currentItem.Name;
+                    var currentItemParent = currentItem.Parent;
 
                     //Creating the temporary clone from the source item in the tmp path
                     var tmpCloneItem = selectedSourceItem.CloneTo(tmpClonesPathItem, false);
@@ -141,12 +141,12 @@ namespace CloneMe.Foundation
                             currentChild.MoveTo(tmpCloneItem);
                         }
                     }
-
+                    
                     //Delete current item
                     DeleteItem(currentItem);
 
                     //Copying tmpClone item to the current item's location with the latter's sitecore id
-                    tmpCloneItem.CopyTo(currentItem.Parent, currentItemName, currentItemId, true);
+                    tmpCloneItem.CopyTo(currentItemParent, currentItemName, currentItemId, true);
 
                     //Clearing all caches
                     Sitecore.Caching.CacheManager.ClearAllCaches();
