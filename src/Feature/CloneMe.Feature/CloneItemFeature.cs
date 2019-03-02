@@ -146,24 +146,16 @@ namespace CloneMe.Feature
         /// <returns>void</returns>
         private static void DeleteItem(Item toBeDeletedItem)
         {
-            try
-            {
-                if (toBeDeletedItem == null)
-                    throw new Exception("Exception in deleting the item as it is null");
+            if (toBeDeletedItem == null)
+                throw new Exception("Exception in deleting the item as it is null");
 
-                using (new Sitecore.SecurityModel.SecurityDisabler())
-                {
-                    if (Sitecore.Configuration.Settings.RecycleBinActive)
-                        toBeDeletedItem.Recycle();
-                    else
-                        toBeDeletedItem.Delete();
-                }
-            }
-            catch (Exception ex)
+            using (new Sitecore.SecurityModel.SecurityDisabler())
             {
-                throw;
+                if (Sitecore.Configuration.Settings.RecycleBinActive)
+                    toBeDeletedItem.Recycle();
+                else
+                    toBeDeletedItem.Delete();
             }
         }
-
     }
 }

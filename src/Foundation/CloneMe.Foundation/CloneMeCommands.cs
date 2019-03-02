@@ -19,12 +19,21 @@ namespace CloneMe.Foundation
         /// <param name="commandContext">commandContext</param>
         public override void Execute(CommandContext commandContext)
         {
-            var args = new ClientPipelineArgs();
-            args.Parameters["id"] = commandContext.Items[0].ID.Guid.ToString("B").ToUpper();
-            args.Parameters["templateId"] = commandContext.Items[0].TemplateID.Guid.ToString("B").ToUpper();
-            args.Parameters["path"] = commandContext.Items[0].Paths.FullPath;
+            try
+            {
+                var args = new ClientPipelineArgs();
+                args.Parameters["id"] = commandContext.Items[0].ID.Guid.ToString("B").ToUpper();
+                args.Parameters["templateId"] = commandContext.Items[0].TemplateID.Guid.ToString("B").ToUpper();
+                args.Parameters["path"] = commandContext.Items[0].Paths.FullPath;
 
-            Context.ClientPage.Start(this, "Run", args);
+                Context.ClientPage.Start(this, "Run", args);
+            }
+            catch (System.Exception ex)
+            {
+                Log.Error("Couldn't change the item to a clone. Exception message: " + ex.Message, this);
+                Context.ClientPage.ClientResponse.Alert(Translate.Text("Couldn't change the item to a clone. Exception message: " + 
+                                                        ex.Message));
+            }
         }
 
         /// <summary>
@@ -78,7 +87,7 @@ namespace CloneMe.Foundation
                 }
                 else
                 {
-                    Log.Info(errorMessage, this);
+                    Log.Error(errorMessage, this);
                 }
             }
         }
