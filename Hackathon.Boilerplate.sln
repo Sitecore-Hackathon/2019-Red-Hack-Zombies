@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneMe.Website", "src\Proj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneMe.Foundation", "src\Foundation\CloneMe.Foundation\CloneMe.Foundation.csproj", "{376225AE-5645-4BB0-885B-4DE71BACE652}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneMe.Feature", "src\Feature\CloneMe.Feature\CloneMe.Feature.csproj", "{9F443179-B892-4FA7-8D33-F1E848A0A631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{376225AE-5645-4BB0-885B-4DE71BACE652}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376225AE-5645-4BB0-885B-4DE71BACE652}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376225AE-5645-4BB0-885B-4DE71BACE652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F443179-B892-4FA7-8D33-F1E848A0A631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F443179-B892-4FA7-8D33-F1E848A0A631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F443179-B892-4FA7-8D33-F1E848A0A631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F443179-B892-4FA7-8D33-F1E848A0A631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
 		{21BE9363-FEBC-4ABF-BA3E-273D7BAB40A5} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
 		{376225AE-5645-4BB0-885B-4DE71BACE652} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{9F443179-B892-4FA7-8D33-F1E848A0A631} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}

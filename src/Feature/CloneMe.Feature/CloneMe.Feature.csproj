@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{376225AE-5645-4BB0-885B-4DE71BACE652}</ProjectGuid>
+    <ProjectGuid>{9F443179-B892-4FA7-8D33-F1E848A0A631}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CloneMe.Foundation</RootNamespace>
-    <AssemblyName>CloneMe.Foundation</AssemblyName>
+    <RootNamespace>CloneMe.Feature</RootNamespace>
+    <AssemblyName>CloneMe.Feature</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -36,7 +36,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,14 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CloneMeCommands.cs" />
+    <Compile Include="CloneItemFeature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Feature\CloneMe.Feature\CloneMe.Feature.csproj">
-      <Project>{9f443179-b892-4fa7-8d33-f1e848a0a631}</Project>
-      <Name>CloneMe.Feature</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
