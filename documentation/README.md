@@ -25,9 +25,10 @@ Does your module rely on other Sitecore modules or frameworks?
 
 Provide detailed instructions on how to install the module, and include screenshots where necessary.
 
--Please have Sitecore 9.1 with .Net Framework 4.7.1 installed on your machine.
--Upload and install the CloneMe-1.0.zip package in your Sitecore instance.
--Now, you are good to go.
+1. Please have Sitecore 9.1 with .Net Framework 4.7.1 installed on your machine.
+2. Upload the CloneMe-1.0.zip package in your Sitecore instance.
+3. Use the Sitecore 9.1 Installation wizard to install Sitecore package.
+3. Now, you are good to go.
 
 ## Configuration
 
