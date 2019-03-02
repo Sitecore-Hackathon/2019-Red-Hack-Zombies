@@ -25,11 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Desktop\HC screen shot\clone-success-message.png = ..\..\..\..\Desktop\HC screen shot\clone-success-message.png
-		..\..\..\..\Desktop\HC screen shot\cloneme-button.png = ..\..\..\..\Desktop\HC screen shot\cloneme-button.png
+		documentation\images\clone-success-message.png = documentation\images\clone-success-message.png
+		documentation\images\cloneme-button.png = documentation\images\cloneme-button.png
 		documentation\images\deal-with-it.gif = documentation\images\deal-with-it.gif
 		documentation\images\hackathon.png = documentation\images\hackathon.png
-		..\..\..\..\Desktop\HC screen shot\select-source-item.png = ..\..\..\..\Desktop\HC screen shot\select-source-item.png
+		documentation\images\select-source-item.png = documentation\images\select-source-item.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2ED30746-56A7-46DA-8A82-2FA1FC0C2C57}"
