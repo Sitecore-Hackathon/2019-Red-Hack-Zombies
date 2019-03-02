@@ -19,6 +19,8 @@ namespace CloneMe.Feature
 
             try
             {
+                
+
                 //Temporary clones path
                 var tmpClonePathId = "{4982D011-6BC2-40DD-BBDE-8B2A07B63853}";
                 using (new Sitecore.SecurityModel.SecurityDisabler())
@@ -40,6 +42,39 @@ namespace CloneMe.Feature
                         isError = true;
                         errorMessage = "Error processing current item. Please try again";
                         Context.ClientPage.ClientResponse.Alert(Translate.Text("Error processing current item. Please try again"));
+                        return;
+                    }
+
+                    //Adding check for same current and selected source items
+                    if (currentItem.ID == selectedSourceItem.ID)
+                    {
+                        isError = true;
+                        errorMessage = string.Format("Source Item cannot be same as current item. Item ID: {0}",
+                            currentItem.ID.Guid.ToString("B").ToUpper());
+                        Context.ClientPage.ClientResponse.Alert(Translate.Text(string.Format("Source Item cannot be same as current item. Item ID: {0}",
+                            currentItem.ID.Guid.ToString("B").ToUpper())));
+                        return;
+                    }
+
+                    //Adding check for selected item being a clone
+                    if (selectedSourceItem.IsClone || selectedSourceItem.IsItemClone)
+                    {
+                        isError = true;
+                        errorMessage = string.Format("Selected source item cannot be a clone. Item ID: {0}",
+                            selectedSourceItem.ID.Guid.ToString("B").ToUpper());
+                        Context.ClientPage.ClientResponse.Alert(Translate.Text(string.Format("Selected source item cannot be a clone. Item ID: {0}",
+                            selectedSourceItem.ID.Guid.ToString("B").ToUpper())));
+                        return;
+                    }
+
+                    //Adding check current item having clones
+                    if (currentItem.HasClones)
+                    {
+                        isError = true;
+                        errorMessage = string.Format("Current item cannot have clones. Item ID: {0}",
+                            currentItem.ID.Guid.ToString("B").ToUpper());
+                        Context.ClientPage.ClientResponse.Alert(Translate.Text(string.Format("Current item cannot have clones. Item ID: {0}",
+                            currentItem.ID.Guid.ToString("B").ToUpper())));
                         return;
                     }
 
