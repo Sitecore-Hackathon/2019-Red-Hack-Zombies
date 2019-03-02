@@ -50,11 +50,11 @@ step 3. Navigate to the Review tab. You see a "CloneMe" button. Please refer to 
 step 4. Click on the "CloneMe" button. Then a pop up will be shown.
 step 5. Select the source item from which you want to clone the current item and click OK. Please refer to below screenshot,
 
-![select source item](images/select-source-item?raw=true "Select Source Item")
+![Select Source Item](images/select-source-item.png?raw=true "Select Source Item")
 
 After few seconds a pop up will be shown which will contain the success message. Please refer to below screenshot
 
-![Clone Success message](images/clone-success-message.png?raw=true "Clone Success Message")
+![Clone Success Message](images/clone-success-message.png?raw=true "Clone Success Message")
 
 ## Video
 
