@@ -18,4 +18,4 @@ To get latest updates reagrding the Hackathon 2019, please go to http://www.site
 
 ## Module Name: CloneMe
 
-For detailed please refer to documentation.
+For detailed description please refer to documentation.
