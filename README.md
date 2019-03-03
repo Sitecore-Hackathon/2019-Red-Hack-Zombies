@@ -4,7 +4,7 @@
 
 Welcome to Sitecore Hackathon 2019.
 
-To get latest updates reagrding the Hackathon 2019, please go to http://www.sitecorehackathon.org/sitecore-hackathon-2019/
+To get latest updates regarding the Hackathon 2019, please go to http://www.sitecorehackathon.org/sitecore-hackathon-2019/
 
 
 ## Team Members 
